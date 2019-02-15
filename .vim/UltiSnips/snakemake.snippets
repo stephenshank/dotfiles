@@ -1,0 +1,10 @@
+snippet smrule "snakemake rule"
+rule ${1:name_of_rule}:
+	input:
+		${2:name_of_input}
+	output:
+		${3:name_of_output}
+	${4:action}:
+		${5:code_for_action}
+
+endsnippet

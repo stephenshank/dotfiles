@@ -74,6 +74,7 @@ let g:ale_linter_aliases = {'jsx': 'css'}
 "
 "https://mstamenk.github.io/2017/08/snakefile-syntax-file-for-vi-vim.html
 au BufNewFile,BufRead Snakefile set syntax=snakemake
+autocmd BufRead Snakefile set filetype=snakemake
 
 colorscheme elflord
 
