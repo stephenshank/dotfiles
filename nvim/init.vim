@@ -25,20 +25,12 @@ Plugin 'mxw/vim-jsx'
 Plugin 'neomake/neomake'
 Plugin 'honza/vim-snippets'
 Plugin 'scrooloose/nerdtree'
-Plugin 'mattn/emmet-vim'
 Plugin 'Shougo/deoplete.nvim'
 Plugin 'deoplete-plugins/deoplete-jedi'
 call vundle#end()
 filetype plugin indent on
 
 let g:deoplete#enable_at_startup = 1
-
-let g:user_emmet_leader_key='<Tab>'
-let g:user_emmet_settings = {
-  \  'javascript.jsx' : {
-    \      'extends' : 'jsx',
-    \  },
-  \}
 
 set runtimepath+=~/.vim/bundle/vundle/
 
@@ -58,5 +50,5 @@ autocmd BufRead *.bf set filetype=hyphy
 autocmd BufRead *.wbf set filetype=hyphy
 autocmd BufRead *.ibf set filetype=hyphy
 
-let g:python3_host_prog = '/Users/stephenshank/Software/anaconda3/envs/bioinformatics/bin/python'
-let g:deoplete#sources#jedi#python_path = '/Users/stephenshank/Software/anaconda3/envs/bioinformatics/bin/python'
+let g:python3_host_prog = $HOME . '/Software/anaconda3/envs/bioinformatics/bin/python'
+let g:deoplete#sources#jedi#python_path = $HOME . '/Software/anaconda3/envs/bioinformatics/bin/python'
