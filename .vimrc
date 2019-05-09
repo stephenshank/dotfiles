@@ -58,5 +58,5 @@ autocmd BufRead *.bf set filetype=hyphy
 autocmd BufRead *.wbf set filetype=hyphy
 autocmd BufRead *.ibf set filetype=hyphy
 
-let g:python3_host_prog = '/home/sshank/Software/anaconda3/envs/bioinformatics/bin/python'
-let g:deoplete#sources#jedi#python_path = '/home/sshank/Software/anaconda3/envs/bioinformatics/bin/python'
+let g:python3_host_prog = '/Users/stephenshank/Software/anaconda3/envs/bioinformatics/bin/python'
+let g:deoplete#sources#jedi#python_path = '/Users/stephenshank/Software/anaconda3/envs/bioinformatics/bin/python'
