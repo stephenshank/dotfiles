@@ -31,6 +31,7 @@ Plugin 'roxma/vim-hug-neovim-rpc'
 Plugin 'Shougo/neosnippet.vim'
 Plugin 'Shougo/neosnippet-snippets'
 Plugin 'deoplete-plugins/deoplete-jedi'
+Plugin 'carlitux/deoplete-ternjs'
 call vundle#end()
 filetype plugin indent on
 
@@ -74,3 +75,16 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 if has('conceal')
   set conceallevel=2 concealcursor=niv
 endif
+
+let g:deoplete#sources#ternjs#timeout = 1
+let g:deoplete#sources#ternjs#types = 1
+let g:deoplete#sources#ternjs#depths = 1
+let g:deoplete#sources#ternjs#docs = 1
+let g:deoplete#sources#ternjs#filter = 0
+let g:deoplete#sources#ternjs#case_insensitive = 1
+let g:deoplete#sources#ternjs#guess = 0
+let g:deoplete#sources#ternjs#sort = 0
+let g:deoplete#sources#ternjs#expand_word_forward = 0
+let g:deoplete#sources#ternjs#omit_object_prototype = 0
+let g:deoplete#sources#ternjs#include_keywords = 1
+let g:deoplete#sources#ternjs#in_literal = 0
