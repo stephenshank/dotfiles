@@ -31,7 +31,10 @@ Plugin 'roxma/vim-hug-neovim-rpc'
 Plugin 'Shougo/neosnippet.vim'
 Plugin 'Shougo/neosnippet-snippets'
 Plugin 'deoplete-plugins/deoplete-jedi'
+Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'carlitux/deoplete-ternjs'
+Plugin 'w0rp/ale'
+Plugin 'tweekmonster/deoplete-clang2'
 call vundle#end()
 filetype plugin indent on
 
@@ -49,7 +52,7 @@ augroup END
 au BufNewFile,BufRead Snakefile set syntax=snakemake
 autocmd BufRead Snakefile set filetype=snakemake
 
-colorscheme elflord
+colorscheme delek
 
 autocmd BufRead *.bf set filetype=hyphy
 autocmd BufRead *.wbf set filetype=hyphy
@@ -71,10 +74,6 @@ xmap <C-k>     <Plug>(neosnippet_expand_target)
 smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 
-" For conceal markers.
-if has('conceal')
-  set conceallevel=2 concealcursor=niv
-endif
 
 let g:deoplete#sources#ternjs#timeout = 1
 let g:deoplete#sources#ternjs#types = 1
