@@ -87,3 +87,5 @@ let g:deoplete#sources#ternjs#expand_word_forward = 0
 let g:deoplete#sources#ternjs#omit_object_prototype = 0
 let g:deoplete#sources#ternjs#include_keywords = 1
 let g:deoplete#sources#ternjs#in_literal = 0
+
+let g:neosnippet#snippets_directory = $HOME . "/.config/nvim/customSnippets"
