@@ -35,6 +35,7 @@ Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'carlitux/deoplete-ternjs'
 Plugin 'w0rp/ale'
 Plugin 'tweekmonster/deoplete-clang2'
+Plugin 'mhinz/vim-signify'
 call vundle#end()
 filetype plugin indent on
 
@@ -53,6 +54,9 @@ au BufNewFile,BufRead Snakefile set syntax=snakemake
 autocmd BufRead Snakefile set filetype=snakemake
 
 colorscheme delek
+highlight DiffAdd cterm=bold ctermbg=2 ctermfg=82
+highlight DiffDelete cterm=bold ctermbg=9 ctermfg=88
+highlight DiffChange cterm=bold ctermbg=232 ctermfg=15
 
 autocmd BufRead *.bf set filetype=hyphy
 autocmd BufRead *.wbf set filetype=hyphy
