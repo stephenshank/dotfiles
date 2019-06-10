@@ -10,6 +10,8 @@ colo torte
 set ruler
 set autoindent
 set autoread
+set ignorecase
+set smartcase
 set completeopt-=preview
 
 map <C-h> <C-W>h
