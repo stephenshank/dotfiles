@@ -1,0 +1,16 @@
+snippet component
+  import React, { Component } from "react";
+
+  class ${1:ComponentName} extends Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        ${2: key}: ${3: value}
+      }
+    }
+    render() {
+      return ${4: jsx};
+    }
+  }
+
+  export default $1;
