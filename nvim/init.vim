@@ -66,6 +66,8 @@ autocmd BufRead *.bf set filetype=hyphy
 autocmd BufRead *.wbf set filetype=hyphy
 autocmd BufRead *.ibf set filetype=hyphy
 
+au BufNewFile,BufRead *.ejs set filetype=html
+
 let g:python3_host_prog = $HOME . '/Software/anaconda3/envs/bioinformatics/bin/python'
 let g:deoplete#sources#jedi#python_path = $HOME . '/Software/anaconda3/envs/bioinformatics/bin/python'
 
