@@ -33,7 +33,6 @@ Plugin 'roxma/vim-hug-neovim-rpc'
 Plugin 'Shougo/neosnippet.vim'
 Plugin 'Shougo/neosnippet-snippets'
 Plugin 'deoplete-plugins/deoplete-jedi'
-Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'carlitux/deoplete-ternjs'
 Plugin 'w0rp/ale'
 Plugin 'tweekmonster/deoplete-clang2'
@@ -48,6 +47,11 @@ set runtimepath+=~/.vim/bundle/vundle/
 augroup FiletypeGroup
     autocmd!
     au BufNewFile,BufRead *.jsx set filetype=javascript.jsx
+augroup END
+
+augroup FiletypeGroup
+    autocmd!
+    au BufNewFile,BufRead *.test.js set filetype=javascript.test
 augroup END
 
 "
