@@ -20,7 +20,7 @@ map <C-k> <C-W>k
 map <C-l> <C-W>l
 
 set nocompatible
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.config/nvim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'bioSyntax/bioSyntax-vim'
 Plugin 'mxw/vim-jsx'
@@ -41,8 +41,6 @@ call vundle#end()
 filetype plugin indent on
 
 let g:deoplete#enable_at_startup = 1
-
-set runtimepath+=~/.vim/bundle/vundle/
 
 augroup FiletypeGroup
     autocmd!
