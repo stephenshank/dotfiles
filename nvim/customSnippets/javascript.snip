@@ -14,3 +14,15 @@ snippet component
   }
 
   export default $1;
+
+snippet test
+  test("${1:Test description}", () => {
+    ${0:Test body}
+  });
+
+
+snippet route
+	<Route path="${1:path}">
+		<${2:Component} />
+	</Route>
+	${0}
