@@ -42,16 +42,6 @@ filetype plugin indent on
 
 let g:deoplete#enable_at_startup = 1
 
-augroup FiletypeGroup
-    autocmd!
-    au BufNewFile,BufRead *.jsx set filetype=javascript.jsx
-augroup END
-
-augroup FiletypeGroup
-    autocmd!
-    au BufNewFile,BufRead *.test.js set filetype=javascript.test
-augroup END
-
 "
 "https://mstamenk.github.io/2017/08/snakefile-syntax-file-for-vi-vim.html
 au BufNewFile,BufRead Snakefile set syntax=snakemake
