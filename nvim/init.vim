@@ -60,8 +60,8 @@ autocmd BufRead *.ibf set filetype=hyphy
 
 au BufNewFile,BufRead *.ejs set filetype=html
 
-let g:python3_host_prog = $HOME . '/Software/anaconda3/envs/bioinformatics/bin/python'
-let g:deoplete#sources#jedi#python_path = $HOME . '/Software/anaconda3/envs/bioinformatics/bin/python'
+let g:python3_host_prog = $HOME . '/dotfiles/pythonenv/bin/python'
+let g:deoplete#sources#jedi#python_path = $HOME . '/dotfiles/pythonenv/bin/python'
 
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
 smap <C-k>     <Plug>(neosnippet_expand_or_jump)
