@@ -13,6 +13,9 @@ set autoread
 set ignorecase
 set smartcase
 set completeopt-=preview
+set foldmethod=indent
+
+set nofoldenable
 
 map <C-h> <C-W>h
 map <C-j> <C-W>j
