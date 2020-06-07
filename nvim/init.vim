@@ -62,6 +62,7 @@ autocmd BufRead *.wbf set filetype=hyphy
 autocmd BufRead *.ibf set filetype=hyphy
 
 au BufNewFile,BufRead *.ejs set filetype=html
+au BufNewFile,BufRead *.ts set filetype=javascript
 
 let g:python3_host_prog = $HOME . '/dotfiles/pythonenv/bin/python'
 let g:deoplete#sources#jedi#python_path = $HOME . '/dotfiles/pythonenv/bin/python'
