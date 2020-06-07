@@ -1,3 +1,5 @@
+let g:python3_host_prog = $HOME . '/dotfiles/pythonenv/bin/python'
+
 set nu
 set tabstop=2
 set shiftwidth=2
@@ -23,24 +25,23 @@ map <C-k> <C-W>k
 map <C-l> <C-W>l
 
 set nocompatible
-set rtp+=~/.config/nvim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'bioSyntax/bioSyntax-vim'
-Plugin 'mxw/vim-jsx'
-Plugin 'neomake/neomake'
-Plugin 'honza/vim-snippets'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Shougo/deoplete.nvim'
-Plugin 'roxma/nvim-yarp'
-Plugin 'roxma/vim-hug-neovim-rpc'
-Plugin 'Shougo/neosnippet.vim'
-Plugin 'Shougo/neosnippet-snippets'
-Plugin 'deoplete-plugins/deoplete-jedi'
-Plugin 'carlitux/deoplete-ternjs'
-Plugin 'w0rp/ale'
-Plugin 'tweekmonster/deoplete-clang2'
-Plugin 'mhinz/vim-signify'
-call vundle#end()
+call plug#begin('~/.vim/plugged')
+Plug 'bioSyntax/bioSyntax-vim'
+Plug 'mxw/vim-jsx'
+Plug 'neomake/neomake'
+Plug 'honza/vim-snippets'
+Plug 'scrooloose/nerdtree'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neosnippet-snippets'
+Plug 'deoplete-plugins/deoplete-jedi'
+Plug 'carlitux/deoplete-ternjs'
+Plug 'w0rp/ale'
+Plug 'tweekmonster/deoplete-clang2'
+Plug 'mhinz/vim-signify'
+call plug#end()
 filetype plugin indent on
 
 let g:deoplete#enable_at_startup = 1
@@ -64,7 +65,6 @@ autocmd BufRead *.ibf set filetype=hyphy
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.ts set filetype=javascript
 
-let g:python3_host_prog = $HOME . '/dotfiles/pythonenv/bin/python'
 let g:deoplete#sources#jedi#python_path = $HOME . '/dotfiles/pythonenv/bin/python'
 
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
