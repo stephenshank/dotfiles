@@ -6,7 +6,7 @@ nvim +PlugInstall +qall
 # Environment for neovim
 python3 -m venv pythonenv
 ./pythonenv/bin/pip install cython
-./pythonenv/bin/pip install pynvim snakemake biopython pysam numpy pandas scipy matplotlib seaborn pyvcf
+./pythonenv/bin/pip install pynvim snakemake biopython pysam numpy pandas scipy matplotlib seaborn pyvcf pysradb
 
 # TernJS
 rm -f ~/.tern-config; ln -s $PWD/.tern-config ~/.tern-config
