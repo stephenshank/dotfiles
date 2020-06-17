@@ -27,7 +27,6 @@ map <C-l> <C-W>l
 set nocompatible
 call plug#begin('~/.vim/plugged')
 Plug 'bioSyntax/bioSyntax-vim'
-Plug 'mxw/vim-jsx'
 Plug 'neomake/neomake'
 Plug 'honza/vim-snippets'
 Plug 'scrooloose/nerdtree'
@@ -40,6 +39,7 @@ Plug 'deoplete-plugins/deoplete-jedi'
 Plug 'carlitux/deoplete-ternjs'
 Plug 'w0rp/ale'
 Plug 'tweekmonster/deoplete-clang2'
+Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'mhinz/vim-signify'
 call plug#end()
 filetype plugin indent on
