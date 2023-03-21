@@ -108,6 +108,16 @@ lspconfig.pyright.setup({
 	},
 })
 lspconfig.tsserver.setup({})
+lspconfig.rust_analyzer.setup({
+  -- Server-specific settings. See `:help lspconfig-setup`
+  settings = {
+    ['rust-analyzer'] = {
+      diagnostics = {
+        enable = true,
+      },
+    },
+  },
+})
 
 require("luasnip.loaders.from_vscode").lazy_load()
 vim.api.nvim_set_keymap("i", "<C-j>", "<Plug>luasnip-expand-or-jump", { noremap = true, silent = true })
