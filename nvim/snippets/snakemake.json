@@ -1,0 +1,15 @@
+{
+	"A new snakemake rule": {
+		"prefix": "rule",
+		"body": [
+			"rule $1:",
+			"\tinput:",
+			"\t\t$2",
+			"\toutput:",
+			"\t\t$3",
+			"\t$4:",
+			"\t\t$5" 
+		],
+		"description": "Create a new snakemake rule"
+	}
+}

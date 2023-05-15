@@ -1,0 +1,10 @@
+{
+	"Open file for writing": {
+		"prefix": "writefile",
+		"body": [
+			"with open($1, w) as f:",
+			"\tf.write($2)" 
+		],
+		"description": "Open file for writing using a with statement"
+	}
+}

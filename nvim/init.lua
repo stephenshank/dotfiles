@@ -35,7 +35,6 @@ Plug("hrsh7th/nvim-cmp")
 Plug("L3MON4D3/LuaSnip")
 Plug("saadparwaiz1/cmp_luasnip")
 Plug("rafamadriz/friendly-snippets")
-Plug("github/copilot.vim")
 Plug("mhinz/vim-signify")
 vim.fn["plug#end"]()
 
@@ -119,7 +118,7 @@ lspconfig.rust_analyzer.setup({
   },
 })
 
-require("luasnip.loaders.from_vscode").lazy_load()
+require("luasnip.loaders.from_vscode").lazy_load({ paths = { '~/.config/nvim/snippets/' } })
 vim.api.nvim_set_keymap("i", "<C-j>", "<Plug>luasnip-expand-or-jump", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("s", "<C-j>", "<Plug>luasnip-expand-or-jump", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i", "<C-k>", "<Plug>luasnip-jump-prev", { noremap = true, silent = true })
