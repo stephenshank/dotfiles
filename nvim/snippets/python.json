@@ -1,4 +1,11 @@
 {
+	"Set PDB trace": {
+		"prefix": "pdbsettrace",
+		"body": [
+			"import pdb; pdb.set_trace()"
+		],
+		"description": "Insert a debugger invocation"
+	},
 	"Open file for writing": {
 		"prefix": "writefile",
 		"body": [
